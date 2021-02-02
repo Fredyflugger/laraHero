@@ -1,0 +1,76 @@
+$font-stack:    Helvetica, sans-serif;
+$text-color: #F2F4F3;
+$bg-color: #1B2021;
+$lc-color: #ef767a;
+$sb-color: #788AA3;
+$cy-color: #FFD400;
+$speed: 0.5s;
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font: 100% $font-stack;
+    color: $text-color;
+}
+
+body {
+    display: flex;
+    position: relative;
+    background-color: $bg-color;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-flip{
+opacity: 1;
+outline: 0;
+color: $text-color;
+line-height: 40px;
+position: relative;
+text-align: center;
+letter-spacing: 1px;
+display: inline-block;
+text-decoration: none;
+text-transform: uppercase;
+    &:hover{
+        &:after{
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+        }
+        &:before{
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+        }
+    }
+    &:after{
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        color: $bg-color;
+        display: block;
+        transition: $speed;
+        position: absolute;
+        background: $cy-color;
+        content: attr(data-back);
+        transform: translateY(-50%) rotateX(90deg);
+    }
+    &:before{
+        top: 0;
+        left: 0;
+        opacity: 1;
+        color: $text-color;
+        display: block;
+        padding: 0 30px;
+        line-height: 40px;
+        transition: $speed;
+        position: relative;
+        background: $lc-color;
+        content: attr(data-front);
+        transform: translateY(0) rotateX(0);
+    }
+}
