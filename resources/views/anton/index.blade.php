@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title }}</title>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <!-- My Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}" />
 </head>
 
 <body>
@@ -26,6 +26,6 @@
 </body>
 <!-- <script type="text/javascript" src="{{ url('js/script.js') }}"></script> -->
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="{{ secure_asset('js/app.js') }}" defer></script>
 
 </html>
