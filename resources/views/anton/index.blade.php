@@ -6,26 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title }}</title>
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- My Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}" />
 </head>
 
 <body>
     <div class="container">
-        <a href="https://github.com/Fredyflugger" class="btn-flip" data-back="GitHub" data-front="GitHub"></a>
-        <a href="#" class="btn-flip" data-back="Vkontakte" data-front="Vkontakte"></a>
-        <a href="#" class="btn-flip" data-back="Telegram" data-front="Telegram"></a>
-        <a href="#" class="btn-flip" data-back="Test" data-front="NotTest"></a>
-        <div class="tmp">
-            <p>HTML, CSS, Sass, PHP, JavaScript, SQL</p>
-            <p>Visual Studio Code, MySQLWorkbench, Bootstrap, Github, Figma, Laravel</p>
-            <img src="{{ asset('img/doge.jpg') }}" alt="doge">
+        <li class="nav-item dropdown">
+            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre> Language 
+            <span class="caret"></span>
+            </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="lang/en">English</a>
+                    <a class="dropdown-item" href="lang/ru">Russian</a>
+                </div>
+        </li> 
+        <div class="buttons">
+            <a href="https://github.com/Fredyflugger" class="btn-flip" data-back="GitHub" data-front="GitHub"></a>
+            <a href="https://vk.com/fflugger" class="btn-flip" data-back="{{ trans('sentence.vk') }}" data-front="{{ trans('sentence.vk') }}"></a>
+            <a href="https://t.me/fredyflugger" class="btn-flip" data-back="Telegram" data-front="Telegram"></a>
+            <a href="#" class="btn-flip" data-back="{{ trans('sentence.out_of_order') }}" data-front="{{ trans('sentence.button') }}"></a>
+        </div>
+        <div class="aboutMe">
+            <div class="photo">
+                <img class="myPhoto" src="{{ asset('img/doge.jpg') }}" alt="doge">
+                <span>{{ trans('sentence.my_name') }}</span>
+            </div>
+            <div class="desc">
+                <ul>
+                    <li class="liHeader">{{ trans('sentence.skills') }}:</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Sass</li>
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+                <ul>
+                    <li class="liHeader">{{ trans('sentence.instruments') }}:</li>
+                    <li>Visual Studio Code</li>
+                    <li>MySQLWorkbench</li>
+                    <li>Bootstrap</li>
+                    <li>Github</li>
+                    <li>Figma</li>
+                    <li>Laravel</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
 <!-- <script type="text/javascript" src="{{ url('js/script.js') }}"></script> -->
 <!-- Scripts -->
-<script src="{{ secure_asset('js/app.js') }}" defer></script>
+<script src="{{ asset('js/app.js') }}" defer></script>
 
 </html>
+
+<!-- secure_asset !!!! -->

@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+if ( file_exists( app_path( 'Http/Controllers/LocalisationController.php') ) ) 
+{
+  Route::get('lang/{locale}', 'App\Http\Controllers\LocalisationController@lang');
+}
+
 Route::get('/', function () {
     return view('welcome');
 });

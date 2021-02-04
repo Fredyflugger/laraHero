@@ -8,21 +8,14 @@ $speed: 0.5s;
 
 
 body, html {
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font: 100% $font-stack;
     color: $text-color;
 }
 
 body {
-    display: flex;
-    position: relative;
     background-color: $bg-color;
-    align-items: center;
-    justify-content: center;
 }
 
 .btn-flip{
@@ -36,6 +29,8 @@ letter-spacing: 1px;
 display: inline-block;
 text-decoration: none;
 text-transform: uppercase;
+margin: 5px;
+margin-top: 10vh;
     &:hover{
         &:after{
         opacity: 1;
@@ -73,4 +68,52 @@ text-transform: uppercase;
         content: attr(data-front);
         transform: translateY(0) rotateX(0);
     }
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo {
+    display: flex;
+    span {
+        writing-mode: vertical-lr;
+        white-space:nowrap;
+        display:block;
+        width:20px;
+        height:20px;
+    }
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    .desc {
+        margin-left: 10px;
+    }
+}
+
+.desc {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+        list-style-type: none;
+        li {
+            margin: 10px;
+        }
+        .liHeader {
+            text-transform: uppercase;
+            color: $cy-color;
+            font-weight: bold;
+        }
+    }
+}
+
+.nav-item {
+    list-style-type: none;
 }
