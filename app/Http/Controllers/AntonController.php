@@ -8,7 +8,6 @@ class AntonController extends Controller
 {
     public function index() 
     {
-        $title = 'Nebogatov Anton';
-        return view('anton.index', ['title' => $title]);
+        return view('anton.index', []);
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title }}</title>
+    <title>{{ trans('sentence.my_name') }}</title>
     <!-- Styles -->
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <!-- My Styles -->
@@ -13,15 +13,20 @@
 
 <body>
     <div class="container">
-        <li class="nav-item dropdown">
-            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre> Language 
-            <span class="caret"></span>
-            </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="lang/en">English</a>
-                    <a class="dropdown-item" href="lang/ru">Russian</a>
-                </div>
-        </li> 
+        <div class="li-wrapper">
+            <li class="nav-item dropdown language">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" 
+                    href="#" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" v-pre>
+                    {{ trans('sentence.language') }}
+                    <span class="caret"></span>
+                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="lang/en">English</a>
+                        <a class="dropdown-item" href="lang/ru">Русский</a>
+                    </div>
+            </li> 
+        </div>
         <div class="buttons">
             <a href="https://github.com/Fredyflugger" class="btn-flip" data-back="GitHub" data-front="GitHub"></a>
             <a href="https://vk.com/fflugger" class="btn-flip" data-back="{{ trans('sentence.vk') }}" data-front="{{ trans('sentence.vk') }}"></a>
@@ -53,6 +58,13 @@
                     <li>Laravel</li>
                 </ul>
             </div>
+        </div>
+        <div class="grid">
+            <div class="cell">test</div>
+            <div class="cell">test</div>
+            <div class="cell">test</div>
+            <div class="cell">test</div>
+            <div class="cell">test</div>
         </div>
     </div>
 </body>
