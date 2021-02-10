@@ -15,17 +15,15 @@
     <div class="container">
         <div class="li-wrapper">
             <li class="nav-item dropdown language">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" 
-                    href="#" role="button" data-toggle="dropdown" 
-                    aria-haspopup="true" aria-expanded="false" v-pre>
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ trans('sentence.language') }}
                     <span class="caret"></span>
                 </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="lang/en">English</a>
-                        <a class="dropdown-item" href="lang/ru">Русский</a>
-                    </div>
-            </li> 
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="lang/en">English</a>
+                    <a class="dropdown-item" href="lang/ru">Русский</a>
+                </div>
+            </li>
         </div>
         <div class="buttons">
             <a href="https://github.com/Fredyflugger" class="btn-flip" data-back="GitHub" data-front="GitHub"></a>
@@ -60,7 +58,9 @@
             </div>
         </div>
         <div class="grid">
-            <div class="cell">test</div>
+            <div class="cell">
+                <a href="{{ URL::route('medicare') }}">Medicare</a>
+            </div>
             <div class="cell">test</div>
             <div class="cell">test</div>
             <div class="cell">test</div>

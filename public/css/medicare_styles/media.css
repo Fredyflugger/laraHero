@@ -1,0 +1,124 @@
+@media (max-width: 1600px) {
+  .gallery {
+    padding: 90px 100px 0 100px;
+  }
+  .gallery .galleryWrap {
+    margin: 0 auto;
+  }
+
+  .ourTeam {
+    padding: 100px 70px 0 70px;
+  }
+}
+@media (max-width: 1350px) {
+  .reasons_col_2 {
+    display: none;
+  }
+}
+@media (max-width: 1350px) {
+  .workFlow {
+    padding: 100px 50px 0 50px;
+  }
+}
+@media (max-width: 1280px) {
+  .icons .icoWrap .workT .light_full {
+    display: none;
+  }
+  .icons .icoWrap .workT .light_compact {
+    display: inline;
+  }
+
+  hr {
+    width: 100%;
+  }
+}
+@media (max-width: 1320px) {
+  .icons {
+    padding: 3%;
+  }
+
+  .menu {
+    padding: 3%;
+  }
+
+  .banner {
+    padding: 180px 0 0 125px;
+    background-position: center center;
+  }
+  .banner img {
+    display: none;
+  }
+
+  .reasons {
+    padding-top: 3%;
+  }
+
+  .services {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .services .service_item {
+    padding-top: 37px;
+  }
+  .services .service_item p {
+    margin-bottom: 20px;
+  }
+
+  .statistics {
+    padding: 160px 3% 0 3%;
+    background-position: center center;
+  }
+
+  .workFlow {
+    padding: 3% 3% 0 3%;
+  }
+  .workFlow .workFlow_wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .workFlow .workFlow_wrap .work_block1, .workFlow .workFlow_wrap .work_block2 {
+    text-align: center;
+  }
+
+  .gallery {
+    padding: 3%;
+  }
+  .gallery .galleryWrap {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .gallery .galleryWrap img {
+    margin: 0 auto;
+  }
+
+  .ourTeam {
+    padding: 3%;
+  }
+  .ourTeam .facesWrap {
+    flex-wrap: wrap;
+  }
+
+  .info {
+    padding: 3%;
+  }
+}
+@media (max-width: 856px) {
+  .info {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 756px) {
+  .gallery .galleryWrap {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .work_block1 .workFlow_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
