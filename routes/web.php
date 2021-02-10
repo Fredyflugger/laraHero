@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'anton'], function () {
   Route::get('/', 'App\Http\Controllers\AntonController@index')->name('antonIndex');
-  Route::view('/medicare', 'anton\medicare')->name('medicare');
+  Route::get('/medicare', 'App\Http\Controllers\AntonController@medicare')->name('medicare');
 });
 
 // Route::get('/svetlana', 'App\Http\Controllers\SvetlanaController@index')->name('svetlanaIndex');

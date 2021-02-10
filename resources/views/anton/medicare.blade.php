@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ secure_asset('css/medicare_styles/styles.css') }}">
   <link rel="stylesheet" href="{{ secure_asset('css/medicare_styles/media.css') }}">
   <link rel="stylesheet" href="{{ secure_asset('css/medicare_styles/animations.css') }}">
-  <title>Maket2</title>
+  <title>CarePoint</title>
 </head>
 
 <body>

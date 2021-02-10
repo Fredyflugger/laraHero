@@ -10,4 +10,8 @@ class AntonController extends Controller
     {
         return view('anton.index', []);
     }
+    public function medicare() 
+    {
+        return view('anton.medicare', []);
+    }
 }
