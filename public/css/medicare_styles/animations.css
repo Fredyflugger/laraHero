@@ -28,24 +28,25 @@
 
 @keyframes imageAnimation {
   0% {
-    opacity: 1;
-    left: 1600px;
+    opacity: 0;
   }
-  8% {
-    opacity: 1;
-    left: 0;
+  3% {
+    opacity: 0.5;
   }
-  34% {
-    opacity: 1;
-    left: 0;
+  5% {
+    opacity: 0.75;
   }
-  42% {
+  10% {
     opacity: 1;
-    left: -1700px;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
   }
   100% {
-    opacity: 1;
-    left: -1700px;
+    opacity: 0;
   }
 }
 .banner > div {

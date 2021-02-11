@@ -1,0 +1,71 @@
+.b-footer_grid {
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+}
+
+.b-footer {
+    background-color: #3b3b3b;
+    &__header{
+        color: #666666;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    &__text {
+        color: #999999;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20.8px;
+    }
+    &__horLine {
+        background-color: #484848;
+        margin: 0;
+    }
+    &__specialSnowflakeText {
+        color: #999999;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 15.6px;
+    }
+    &__quickText {
+        line-height: 30px;
+    }
+}
+
+.b-footerElement__header {
+    margin-bottom: 30px;
+}
+
+.b-submitForm {
+    &__input {
+        height: 31px;
+        min-width: 210px;
+        background-color: #1f1f1f;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        color: #999999;
+        font-size: 13px;
+        line-height: 20.58px;
+        font-weight: 400;
+    }
+    &__name, &__mail {
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+    &__submit {
+        width: 80px;
+        height: 31px;
+        border-radius: 5px;
+        background-color: #1f1f1f;
+        color: $mainColor;
+        font-size: 13px;
+        line-height: 20.58px;
+        text-transform: uppercase;
+        border: 0;
+        outline: 0;
+    }
+}

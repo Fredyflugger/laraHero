@@ -61,7 +61,9 @@
             <div class="cell">
                 <a href="{{ URL::route('medicare') }}">Medicare</a>
             </div>
-            <div class="cell">test</div>
+            <div class="cell">
+                <a href="{{ URL::route('concomitant') }}">Concomitant</a>
+            </div>
             <div class="cell">test</div>
             <div class="cell">test</div>
             <div class="cell">test</div>

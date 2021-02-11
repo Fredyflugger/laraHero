@@ -80,7 +80,7 @@
           plan options for you</h1>
         <p>Sed ut per&#173;spi&#173;ciatis un&#173;de om&#173;nis iste natus er&#173;ror sit vo&#173;luptatem
           ac&#173;cus&#173;an&#173;ti&#173;um do&#173;lorem&#173;que laud&#173;anti&#173;um.</p>
-        <a href="#" class="readBtnLink">
+        <a href="#">
           <div class="readBtn">
             <span>Read more</span>
           </div>

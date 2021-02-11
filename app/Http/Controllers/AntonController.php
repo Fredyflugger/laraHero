@@ -14,4 +14,8 @@ class AntonController extends Controller
     {
         return view('anton.medicare', []);
     }
+    public function concomitant()
+    {
+        return view('anton.concomitant', []);
+    }
 }

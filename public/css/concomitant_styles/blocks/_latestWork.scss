@@ -1,0 +1,39 @@
+.b-latestWorks {
+    min-height: 431px;
+    padding: 50px 30px;
+    display: grid;
+    grid-gap: 22px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    &__gridElement {
+        max-width: 209px;
+    }
+    &__picture {
+        margin: 0;
+        max-width: 200px;
+        max-height: 130px;
+        border: 4px solid #fff;
+        outline: 1px solid #e2e2e2;
+    }
+    &__header {
+        color: #444444;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 42px;
+    }
+    &__text {
+        color: #878787;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20.8px;
+    }
+    &__details {
+        display: block;
+        width: 100%;
+        color: $mainColor;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 13px;
+        text-align: right;
+    }
+}
