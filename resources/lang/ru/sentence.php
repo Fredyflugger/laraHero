@@ -9,4 +9,5 @@ return [
 'button' => 'Кнопка',
 'out_of_order' => 'Не Работает',
 'language' => 'Язык',
+'projects' => 'Проекты',
 ];

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -12,63 +12,80 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="li-wrapper">
-            <li class="nav-item dropdown language">
-                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ trans('sentence.language') }}
-                    <span class="caret"></span>
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="lang/en">English</a>
+    <!-- Header -->
+    <div class="bfh">
+        <div class="dropdown">
+            <div class="langbtn">
+                @if (Lang::locale() == 'en')
+                    English
+                @elseif (Lang::locale() == 'ru')
+                    Русский
+                @endif
+            </div>
+            <div class="dropdown-content">
+                @if (Lang::locale() == 'en')
                     <a class="dropdown-item" href="lang/ru">Русский</a>
+                @elseif (Lang::locale() == 'ru')
+                    <a class="dropdown-item" href="lang/en">English</a>
+                @endif
+            </div>
+        </div>
+        <div class="mobile_photo"></div> 
+        <div class="memyselfandi">
+            <p class="my_name">{{ trans('sentence.my_name') }}</p>
+            <p class="my_job">frontend/ backend</p>
+            <a href="https://t.me/fredyflugger"><img src="{{ secure_asset('img/logos/tg.svg') }}" alt="tg" class="logos"></a>
+            <a href="https://github.com/Fredyflugger"><img src="{{ secure_asset('img/logos/github.svg') }}" alt="git" class="logos"></a>
+            <a href="https://vk.com/fflugger"><img src="{{ secure_asset('img/logos/vk.svg') }}" alt="vk" class="logos"></a>
+            <a href="https://drive.google.com/drive/folders/1EwRkjAmYLGe3QDNjHn_qCh9R-hjWPP2j?usp=sharing"><img src="{{ secure_asset('img/logos/diploma.svg') }}" alt="certs" class="logos"></a>
+            <div class="about_me">
+                <div class="desc">
+                    <ul class="blue skills_ul">
+                        <li class="colored_header skills">{{ trans('sentence.skills') }}</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                        <li>PHP</li> 
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                    </ul>
+                    <ul class="purple">
+                        <li class="colored_header instruments">{{ trans('sentence.instruments') }}</li>
+                        <li>Visual Studio Code</li>
+                        <li>MySQLWorkbench</li>
+                        <li>Bootstrap</li>
+                        <li>Github</li>
+                        <li>Figma</li>
+                        <li>Laravel</li>
+                    </ul>
                 </div>
-            </li>
-        </div>
-        <div class="buttons">
-            <a href="https://github.com/Fredyflugger" class="btn-flip" data-back="GitHub" data-front="GitHub"></a>
-            <a href="https://vk.com/fflugger" class="btn-flip" data-back="{{ trans('sentence.vk') }}" data-front="{{ trans('sentence.vk') }}"></a>
-            <a href="https://t.me/fredyflugger" class="btn-flip" data-back="Telegram" data-front="Telegram"></a>
-            <a href="#" class="btn-flip" data-back="{{ trans('sentence.out_of_order') }}" data-front="{{ trans('sentence.button') }}"></a>
-        </div>
-        <div class="aboutMe">
-            <div class="photo">
-                <img class="myPhoto" src="{{ secure_asset('img/doge.jpg') }}" alt="doge">
-                <span>{{ trans('sentence.my_name') }}</span>
-            </div>
-            <div class="desc">
-                <ul>
-                    <li class="liHeader">{{ trans('sentence.skills') }}:</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Sass</li>
-                    <li>PHP</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                </ul>
-                <ul>
-                    <li class="liHeader">{{ trans('sentence.instruments') }}:</li>
-                    <li>Visual Studio Code</li>
-                    <li>MySQLWorkbench</li>
-                    <li>Bootstrap</li>
-                    <li>Github</li>
-                    <li>Figma</li>
-                    <li>Laravel</li>
-                </ul>
             </div>
         </div>
-        <div class="grid">
-            <div class="cell">
-                <a href="{{ URL::route('medicare') }}">Medicare</a>
+        <div class="mask"></div>
+        <div class="grid_wrap">
+            <div class="grid_header">
+                <span>{{ trans('sentence.projects') }}</span>
             </div>
-            <div class="cell">
-                <a href="{{ URL::route('concomitant') }}">Concomitant</a>
+            <div class="grid_projects">
+                <div class="cell_projects">
+                <img src="{{ secure_asset('img/projects_thumb/carepoint.png') }}" alt="medicare">
+                    <div class="project_link">
+                        <a href="{{ URL::route('medicare') }}">Medicare</a>
+                        <img src="{{ secure_asset('img/arrow.svg') }}" alt="arrow">
+                    </div>
+                </div>
+                <div class="cell_projects">
+                    <img src="{{ secure_asset('img/projects_thumb/concomitant.png') }}" alt="concomitant" class="site_thumbnail">
+                    <div class="project_link">
+                        <a href="{{ URL::route('concomitant') }}">Concomitant</a>
+                        <img src="{{ secure_asset('img/arrow.svg') }}" alt="arrow">
+                    </div>
+                </div>
             </div>
-            <div class="cell">test</div>
-            <div class="cell">test</div>
-            <div class="cell">test</div>
         </div>
     </div>
+    <!-- Body -->
+
 </body>
 <!-- <script type="text/javascript" src="{{ url('js/script.js') }}"></script> -->
 <!-- Scripts -->

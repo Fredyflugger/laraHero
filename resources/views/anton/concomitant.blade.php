@@ -71,19 +71,19 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ asset('img/concomitant_img/slide_1.jpg') }}" alt="First slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/880x360?text=One" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/concomitant_img/slide_2.jpg') }}" alt="Second slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/880x360?text=Two" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/concomitant_img/slide_3.jpg') }}" alt="Third slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/880x360?text=Three" alt="Third slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/concomitant_img/slide_4.jpg') }}" alt="Third slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/880x360?text=Four" alt="Third slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ asset('img/concomitant_img/slide_5.jpg') }}" alt="Third slide">
+                    <img class="d-block w-100" src="https://via.placeholder.com/880x360?text=Five" alt="Third slide">
                   </div>
                 </div>
             </div>

@@ -9,4 +9,5 @@ return [
 'button' => 'Button',
 'out_of_order' => 'Out Of Order',
 'language' => 'Language',
+'projects' => 'Projects',
 ];
