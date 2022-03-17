@@ -12,7 +12,6 @@ $cy-color: #FFD400;
 $speed: 0.5s;
 
 body, html {
-    
     margin: 0;
     padding: 0;
     font: 100% $font-stack;
@@ -20,7 +19,7 @@ body, html {
 }
 
 body {
-    background-color: $bg-color !important;
+    background-color: $bg-color;
     width: calc(100vw - (100vw - 100%));
 }
 
