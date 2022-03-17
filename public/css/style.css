@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #fff !important;
   width: calc(100vw - (100vw - 100%));
 }
 
