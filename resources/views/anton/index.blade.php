@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ trans('sentence.my_name') }}</title>
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <!-- My Styles -->
     <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}" />
 </head>
