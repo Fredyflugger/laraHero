@@ -7,8 +7,8 @@
     <title>{{ trans('sentence.my_name') }}</title>
     <!-- Styles -->
     <!-- My Styles -->
-    <!-- <link rel="stylesheet" type="text/css" href="{{ mix('/css/style.css') }}" /> -->
-    <?php include public_path('css/style.css') ?>
+    <link rel="stylesheet" type="text/css" href="<?php include public_path('css/style.css') ?>" />
+    
 </head>
 
 <body>
@@ -90,9 +90,9 @@
 <!-- <script type="text/javascript" src="{{ url('js/script.js') }}"></script> -->
 <!-- Scripts -->
 
-<!-- <script type="text/javascript" src="{{ mix('js/app.js') }}"></script> -->
+<script type="text/javascript" src="<?php include public_path('js/app.js') ?>"></script>
 
-<?php include public_path('js/app.js') ?>
+
 
 </html>
 
