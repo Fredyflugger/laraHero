@@ -7,7 +7,7 @@
     <title>{{ trans('sentence.my_name') }}</title>
     <!-- Styles -->
     <!-- My Styles -->
-    <link rel="stylesheet" type="text/css" href="<?php include public_path('css/style.css') ?>" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />
     
 </head>
 
@@ -90,7 +90,7 @@
 <!-- <script type="text/javascript" src="{{ url('js/script.js') }}"></script> -->
 <!-- Scripts -->
 
-<script type="text/javascript" src="<?php include public_path('js/app.js') ?>"></script>
+<script type="text/javascript" src="{{ URL::asset('js/app.js') }}"></script>
 
 
 
