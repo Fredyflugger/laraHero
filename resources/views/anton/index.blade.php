@@ -7,7 +7,7 @@
     <title>{{ trans('sentence.my_name') }}</title>
     <!-- Styles -->
     <!-- My Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />
+    <link href="{{ secure_asset('css/style.css') }}" media="all" rel="stylesheet" type="text/css" />
     
 </head>
 
