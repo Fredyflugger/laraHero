@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ trans('sentence.my_name') }}</title>
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <!-- My Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ mix('/css/style.css') }}" />
 </head>
 
 <body>
@@ -89,7 +88,7 @@
 </body>
 <!-- <script type="text/javascript" src="{{ url('js/script.js') }}"></script> -->
 <!-- Scripts -->
-<script src="{{ secure_asset('js/app.js') }}" defer></script>
+<script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
 
 </html>
 
