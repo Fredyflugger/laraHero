@@ -19,7 +19,7 @@ if ( file_exists( app_path( 'Http/Controllers/LocalisationController.php') ) )
 }
 
 Route::get('/', function () {
-    return view('welcome');
+  return redirect('/anton');
 });
 
 
