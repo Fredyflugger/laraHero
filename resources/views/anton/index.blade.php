@@ -68,7 +68,7 @@
             </div>
             <div class="grid_projects">
                 <div class="cell_projects">
-                <img src="{{ secure_asset('img/projects_thumb/carepoint.png') }}" alt="medicare">
+                    <img src="{{ secure_asset('img/projects_thumb/carepoint.png') }}" alt="medicare" class="site_thumbnail">
                     <div class="project_link">
                         <a href="{{ URL::route('medicare') }}">Medicare</a>
                         <img src="{{ secure_asset('img/arrow.svg') }}" alt="arrow">

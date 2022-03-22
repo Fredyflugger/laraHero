@@ -19,6 +19,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   margin: 0px;
+  padding-bottom: 100px;
   width: calc(100vw - (100vw - 100%));
   max-height: 100%;
   background-color: #8085EF;
@@ -216,7 +217,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 537px;
-  height: 306px;
+  height: 366px;
   text-align: center;
 }
 
@@ -240,7 +241,7 @@ body {
   padding-left: 2vw;
   padding-right: 2vw;
   background: #EBEBEB;
-  width: 100%;
+  max-width: 537px;
   height: 60px;
 }
 
@@ -255,41 +256,81 @@ body {
 }
 
 .site_thumbnail {
-  max-width: 537px;
-  max-height: 235px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .mobile_photo {
   display: none;
 }
 
+@media (max-width: 1900px) {
+  .bfh {
+    background-position: 0 0, top right -150px;
+  }
+}
+
 @media (max-width: 1700px) {
   .bfh {
-    background-position: 0 0, top right -100px;
+    background-position: top left -100px, top right -250px;
   }
 }
 
 @media (max-width: 1550px) {
   .bfh {
-    background-position: 0 0, top right -200px;
+    background-position: top left -100px, top right -300px;
   }
 }
 
 @media (max-width: 1400px) {
   .bfh {
-    background-position: 0 0, top right -300px;
+    background-position: top left -200px, top right -300px;
   }
 }
 
 @media (max-width: 1350px) {
   .bfh {
-    background-position: top left -100px, top right -300px;
+    background-position: top left -300px, top right -350px;
+  }
+  .grid_projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 40px 40px;
+  }
+  .cell_projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 315px;
+    height: 240px;
+    text-align: center;
+    justify-self: start;
+    margin-left: 20px;
+  }
+  .logos {
+    width: 40px;
+    height: 40px;
+  }
+  .grid_wrap {
+    margin-top: 25px;
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   .bfh {
-    background-position: top left -200px, top right -300px;
+    background-position: top left -350px, top right -400px;
   }
 }
 
@@ -332,40 +373,6 @@ body {
   .desc .skills_ul {
     display: block;
     margin-bottom: 25px;
-  }
-  .grid_projects {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    gap: 40px 40px;
-  }
-  .cell_projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 315px;
-    height: 213px;
-    text-align: center;
-    justify-self: start;
-    margin-left: 20px;
-  }
-  .logos {
-    width: 40px;
-    height: 40px;
-  }
-  .grid_wrap {
-    margin-top: 25px;
   }
 }
 
