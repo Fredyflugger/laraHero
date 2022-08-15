@@ -45,8 +45,8 @@
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>Sass</li>
-                        <li>PHP</li> 
                         <li>JavaScript</li>
+                        <li>PHP</li>
                         <li>SQL</li>
                     </ul>
                     <ul class="purple">
@@ -78,6 +78,13 @@
                     <img src="{{ secure_asset('img/projects_thumb/concomitant.png') }}" alt="concomitant" class="site_thumbnail">
                     <div class="project_link">
                         <a href="{{ URL::route('concomitant') }}">Concomitant</a>
+                        <img src="{{ secure_asset('img/arrow.svg') }}" alt="arrow">
+                    </div>
+                </div>
+                <div class="cell_projects">
+                    <img src="{{ secure_asset('img/projects_thumb/chernayal.png') }}" alt="chernayal" class="site_thumbnail">
+                    <div class="project_link">
+                        <a href="https://www.chernayal.ru">Chernayal</a>
                         <img src="{{ secure_asset('img/arrow.svg') }}" alt="arrow">
                     </div>
                 </div>
