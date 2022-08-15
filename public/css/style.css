@@ -16,22 +16,22 @@ body {
 }
 
 .bfh {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0px;
   padding-bottom: 100px;
   width: calc(100vw - (100vw - 100%));
   max-height: 100%;
-  background-color: #8085EF;
-  background-image: url("/img/bg_exclude.svg"), url("/img/photo.png");
-  background-position: 0 0, top right -150px;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, contain;
 }
 
 .memyselfandi {
   margin: 0;
   margin-left: 6.6vw;
+  margin-bottom: 123px;
+  background-color: #8085EF;
+  background-image: url("/img/bg_exclude.svg"), url("/img/photo.png");
+  background-position: 0 0, top right +150px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, contain;
 }
 
 .memyselfandi a {
@@ -46,6 +46,7 @@ body {
   letter-spacing: 0.2em;
   word-spacing: 100vw;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .my_job {
@@ -178,7 +179,6 @@ body {
 .grid_wrap {
   margin-left: 6.6vw;
   width: 100%;
-  margin-top: 123px;
   border-left: 5px solid #EFA880;
   background-color: #fff;
 }
@@ -197,12 +197,13 @@ body {
 .grid_projects {
   display: -ms-grid;
   display: grid;
+  width: calc(100% - 6.6vw);
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   justify-items: center;
-  gap: 40px 40px;
+  gap: 10px 10px;
 }
 
 .cell_projects {
@@ -216,8 +217,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 537px;
-  height: 366px;
+  max-width: 537px;
+  max-height: 366px;
   text-align: center;
 }
 
@@ -264,33 +265,15 @@ body {
   display: none;
 }
 
-@media (max-width: 1900px) {
-  .bfh {
-    background-position: 0 0, top right -150px;
-  }
-}
-
-@media (max-width: 1700px) {
-  .bfh {
-    background-position: top left -100px, top right -250px;
-  }
-}
-
 @media (max-width: 1550px) {
-  .bfh {
-    background-position: top left -100px, top right -300px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .bfh {
-    background-position: top left -200px, top right -300px;
+  .memyselfandi {
+    background-position: top left, top right;
   }
 }
 
 @media (max-width: 1350px) {
-  .bfh {
-    background-position: top left -300px, top right -350px;
+  .memyselfandi {
+    background-position: top left -100px, top right -50px;
   }
   .grid_projects {
     display: -ms-grid;
@@ -323,14 +306,8 @@ body {
     width: 40px;
     height: 40px;
   }
-  .grid_wrap {
-    margin-top: 25px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .bfh {
-    background-position: top left -350px, top right -400px;
+  .memyselfandi {
+    margin-bottom: 25px;
   }
 }
 
@@ -338,7 +315,7 @@ body {
   .dropdown {
     right: 95%;
   }
-  .bfh {
+  .memyselfandi {
     background-image: none;
     background-color: #fff;
   }
@@ -347,6 +324,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("/img/photo.png");
+    background-color: #8085EF;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0;
